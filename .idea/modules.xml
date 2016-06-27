@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jjdxm-keyboard/jjdxm-customui.iml" filepath="$PROJECT_DIR$/jjdxm-keyboard/jjdxm-customui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jjdxm-keyboard/jjdxm-keyboard.iml" filepath="$PROJECT_DIR$/jjdxm-keyboard/jjdxm-keyboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jjdxm_keyboard.iml" filepath="$PROJECT_DIR$/jjdxm_keyboard.iml" />
+    </modules>
+  </component>
+</project>
