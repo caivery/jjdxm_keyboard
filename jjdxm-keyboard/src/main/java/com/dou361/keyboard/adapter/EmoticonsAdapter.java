@@ -17,22 +17,22 @@ import java.util.ArrayList;
 
 /**
  * ========================================
- * <p/>
+ * <p>
  * 版 权：dou361.com 版权所有 （C） 2015
- * <p/>
+ * <p>
  * 作 者：陈冠明
- * <p/>
+ * <p>
  * 个人网站：http://www.dou361.com
- * <p/>
+ * <p>
  * 版 本：1.0
- * <p/>
+ * <p>
  * 创建日期：2016/4/29 17:42
- * <p/>
+ * <p>
  * 描 述：表情基类
- * <p/>
- * <p/>
+ * <p>
+ * <p>
  * 修订历史：
- * <p/>
+ * <p>
  * ========================================
  */
 public class EmoticonsAdapter<T> extends BaseAdapter {
@@ -101,7 +101,7 @@ public class EmoticonsAdapter<T> extends BaseAdapter {
         ViewHolder viewHolder;
         if (convertView == null) {
             viewHolder = new ViewHolder();
-            convertView = mInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "customui_item_emoticon"), null);
+            convertView = mInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "jjdxm_keyboard_item_emoticon"), null);
             viewHolder.rootView = convertView;
             viewHolder.ly_root = (LinearLayout) convertView.findViewById(ResourceUtils.getResourceIdByName(mContext, "id", "ly_root"));
             viewHolder.iv_emoticon = (ImageView) convertView.findViewById(ResourceUtils.getResourceIdByName(mContext, "id", "iv_emoticon"));

@@ -17,22 +17,22 @@ import com.dou361.keyboard.utils.ResourceUtils;
 
 /**
  * ========================================
- * <p/>
+ * <p>
  * 版 权：dou361.com 版权所有 （C） 2015
- * <p/>
+ * <p>
  * 作 者：陈冠明
- * <p/>
+ * <p>
  * 个人网站：http://www.dou361.com
- * <p/>
+ * <p>
  * 版 本：1.0
- * <p/>
+ * <p>
  * 创建日期：2016/6/22 11:50
- * <p/>
+ * <p>
  * 描 述：自定义简单键盘默认显示底部栏
- * <p/>
- * <p/>
+ * <p>
+ * <p>
  * 修订历史：
- * <p/>
+ * <p>
  * ========================================
  */
 public class CustomSimpleEmojiKeyBoard extends CustomEmojiKeyBoard {
@@ -47,12 +47,12 @@ public class CustomSimpleEmojiKeyBoard extends CustomEmojiKeyBoard {
 
     @Override
     protected void inflateKeyboardBar() {
-        mInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "customui_view_keyboard_custom_simple"), this);
+        mInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "jjdxm_keyboard_view_keyboard_custom_simple"), this);
     }
 
     @Override
     protected View inflateFunc() {
-        return mInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "customui_view_func_emoticon_simple"), null);
+        return mInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "jjdxm_keyboard_view_func_emoticon_simple"), null);
     }
 
     @Override
@@ -116,7 +116,7 @@ public class CustomSimpleEmojiKeyBoard extends CustomEmojiKeyBoard {
             @Override
             public void afterTextChanged(Editable s) {
                 if (!TextUtils.isEmpty(s)) {
-                    mBtnSend.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_btn_send_bg"));
+                    mBtnSend.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_btn_send_bg"));
                 } else {
                 }
             }
@@ -126,9 +126,9 @@ public class CustomSimpleEmojiKeyBoard extends CustomEmojiKeyBoard {
     @Override
     public void onFuncChange(int key) {
         if (FUNC_TYPE_EMOTION == key) {
-            mBtnFace.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_btn_voice_or_text_keyboard"));
+            mBtnFace.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_btn_voice_or_text_keyboard"));
         } else {
-            mBtnFace.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_btn_emoji_or_text"));
+            mBtnFace.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_btn_emoji_or_text"));
         }
     }
 
@@ -159,11 +159,11 @@ public class CustomSimpleEmojiKeyBoard extends CustomEmojiKeyBoard {
         if (vLine.isShown()) {
             /**表情*/
             vLine.setVisibility(GONE);
-            mBtnFace.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_btn_voice_or_text_keyboard"));
+            mBtnFace.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_btn_voice_or_text_keyboard"));
         } else {
             /**软键盘*/
             vLine.setVisibility(VISIBLE);
-            mBtnFace.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_btn_emoji_or_text"));
+            mBtnFace.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_btn_emoji_or_text"));
         }
         toggleFuncView(FUNC_TYPE_EMOTION);
     }

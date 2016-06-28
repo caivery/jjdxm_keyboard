@@ -10,7 +10,7 @@ ext {
     jjdxm_artifactId = 'jjdxm-keyboard'
 
     jjdxm_libraryVersion = '1.0.0'
-    jjdxm_libraryName = 'jjdxmcustomui'
+    jjdxm_libraryName = 'jjdxm-keyboard'
     jjdxm_libraryDescription = 'this is a keyboard library of the application'
 
     jjdxm_siteUrl = 'https://github.com/jjdxmashl/jjdxm_keyboard'
@@ -50,7 +50,6 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile rootProject.ext.jjdxm_v4
-    compile 'com.nineoldandroids:library:2.4.0'
 }
 
 //apply from: 'https://raw.githubusercontent.com/jjdxmashl/jjdxm_ecodingprocess/master/bulidlib.gradle'

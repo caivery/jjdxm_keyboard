@@ -173,7 +173,7 @@ public class SimpleCommonUtils {
                         viewHolder.ly_root.setBackgroundResource(ResourceUtils.getResourceIdByName(context, "drawable", "bg_emoticon"));
 
                         if (isDelBtn) {
-                            viewHolder.iv_emoticon.setImageResource(ResourceUtils.getResourceIdByName(context, "mipmap", "customui_icon_del"));
+                            viewHolder.iv_emoticon.setImageResource(ResourceUtils.getResourceIdByName(context, "mipmap", "jjdxm_keyboard_icon_del"));
                         } else {
                             viewHolder.iv_emoticon.setImageResource(emojiBean.icon);
                         }
@@ -189,7 +189,7 @@ public class SimpleCommonUtils {
                     }
                 }))
                 .setShowDelBtn(EmoticonPageEntity.DelBtnStatus.LAST)
-                .setIconUri(ImageBase.Scheme.DRAWABLE.toUri("customui_icon_emoji"))
+                .setIconUri(ImageBase.Scheme.DRAWABLE.toUri("jjdxm_keyboard_icon_emoji"))
                 .build();
         pageSetAdapter.add(emojiPageSetEntity);
     }
@@ -273,7 +273,7 @@ public class SimpleCommonUtils {
                 .setRow(3)
                 .setEmoticonList(ParseDataUtils.parseKaomojiData(context))
                 .setIPageViewInstantiateItem(getEmoticonPageViewInstantiateItem(TextEmoticonsAdapter.class, emoticonClickListener))
-                .setIconUri(ImageBase.Scheme.DRAWABLE.toUri("customui_icon_kaomoji"))
+                .setIconUri(ImageBase.Scheme.DRAWABLE.toUri("jjdxm_keyboard_icon_kaomoji"))
                 .build();
         pageSetAdapter.add(kaomojiPageSetEntity);
     }
@@ -289,7 +289,7 @@ public class SimpleCommonUtils {
                 viewHolder.ly_root.setBackgroundResource(ResourceUtils.getResourceIdByName(context, "drawable", "bg_emoticon"));
 
                 if (isDelBtn) {
-                    viewHolder.iv_emoticon.setImageResource(ResourceUtils.getResourceIdByName(context, "mipmap", "customui_icon_del"));
+                    viewHolder.iv_emoticon.setImageResource(ResourceUtils.getResourceIdByName(context, "mipmap", "jjdxm_keyboard_icon_del"));
                 } else {
                     try {
                         ImageLoader.getInstance(viewHolder.iv_emoticon.getContext()).displayImage(emoticonEntity.getIconUri(), viewHolder.iv_emoticon);
@@ -365,7 +365,7 @@ public class SimpleCommonUtils {
                 viewHolder.ly_root.setBackgroundResource(ResourceUtils.getResourceIdByName(context, "drawable", "bg_emoticon"));
 
                 if (isDelBtn) {
-                    viewHolder.iv_emoticon.setImageResource(ResourceUtils.getResourceIdByName(context, "mipmap", "customui_icon_del"));
+                    viewHolder.iv_emoticon.setImageResource(ResourceUtils.getResourceIdByName(context, "mipmap", "jjdxm_keyboard_icon_del"));
                 } else {
                     try {
                         ImageLoader.getInstance(viewHolder.iv_emoticon.getContext()).displayImage(emoticonEntity.getIconUri(), viewHolder.iv_emoticon);

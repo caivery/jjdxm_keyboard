@@ -30,22 +30,22 @@ import java.util.Random;
 
 /**
  * ========================================
- * <p/>
+ * <p>
  * 版 权：dou361.com 版权所有 （C） 2015
- * <p/>
+ * <p>
  * 作 者：陈冠明
- * <p/>
+ * <p>
  * 个人网站：http://www.dou361.com
- * <p/>
+ * <p>
  * 版 本：1.0
- * <p/>
+ * <p>
  * 创建日期：2016/3/15 22:07
- * <p/>
+ * <p>
  * 描 述：自定义密码键盘
- * <p/>
- * <p/>
+ * <p>
+ * <p>
  * 修订历史：
- * <p/>
+ * <p>
  * ========================================
  */
 public class CustomPasswordKeyBoard extends View implements OnClickListener {
@@ -95,13 +95,13 @@ public class CustomPasswordKeyBoard extends View implements OnClickListener {
 
         keyboardIndex = 0;
         layoutInflater = activity.getLayoutInflater();
-        popView = layoutInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "customui_keyboard_popwindow_keyboard"), null);
+        popView = layoutInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "jjdxm_keyboard_popwindow_keyboard"), null);
         if (popup == null)
             popup = new PopupWindow(popView, LayoutParams.FILL_PARENT,
                     LayoutParams.WRAP_CONTENT, true);
 
         viewFilpper = (ViewFlipper) popView.findViewById(ResourceUtils.getResourceIdByName(mContext, "id", "viewFlipper1"));
-        viewFilpper.setInAnimation(AnimationUtils.loadAnimation(mContext, ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_keyboard_animation_in_from_bottom")
+        viewFilpper.setInAnimation(AnimationUtils.loadAnimation(mContext, ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_animation_in_from_bottom")
         ));
         viewFilpper.setFlipInterval(600000);
 
@@ -171,7 +171,7 @@ public class CustomPasswordKeyBoard extends View implements OnClickListener {
         container.removeAllViews();
 
         if (index == 0) {
-            keyboardsView = activity.getLayoutInflater().inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "customui_keyboard_digitals")
+            keyboardsView = activity.getLayoutInflater().inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "jjdxm_keyboard_digitals")
                     , null);
             int[] digital = getRandomNum();
             btn_clear = (Button) keyboardsView.findViewById(ResourceUtils.getResourceIdByName(mContext, "id", "btn_clear"));
@@ -191,10 +191,10 @@ public class CustomPasswordKeyBoard extends View implements OnClickListener {
         } else if (index == 1) {
 
             if (isCapital)
-                keyboardsView = activity.getLayoutInflater().inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "customui_keyboard_character_capital")
+                keyboardsView = activity.getLayoutInflater().inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "jjdxm_keyboard_character_capital")
                         , null);
             else
-                keyboardsView = activity.getLayoutInflater().inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "customui_keyboard_character")
+                keyboardsView = activity.getLayoutInflater().inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "jjdxm_keyboard_character")
                         , null);
             btn_clear = (Button) keyboardsView.findViewById(ResourceUtils.getResourceIdByName(mContext, "id", "btn_clear"));
             btn_clear.setOnClickListener(this);
@@ -212,7 +212,7 @@ public class CustomPasswordKeyBoard extends View implements OnClickListener {
             // initKeyBoard();
             container.addView(keyboardsView);
         } else {
-            keyboardsView = activity.getLayoutInflater().inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "customui_keyboard_symbol")
+            keyboardsView = activity.getLayoutInflater().inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "jjdxm_keyboard_symbol")
                     , null);
             btn_clear = (Button) keyboardsView.findViewById(ResourceUtils.getResourceIdByName(mContext, "id", "btn_clear"));
             btn_clear.setOnClickListener(this);
@@ -272,38 +272,38 @@ public class CustomPasswordKeyBoard extends View implements OnClickListener {
 
         } else if (v.getId() == btn_number.getId()) {
             // switch to digital
-            btn_character.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_keyboard_key_btn_normal"));
+            btn_character.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_key_btn_normal"));
             btn_character.setTextColor(Color.BLACK);
-            btn_symbol.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_keyboard_key_btn_normal"));
+            btn_symbol.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_key_btn_normal"));
             btn_symbol.setTextColor(Color.BLACK);
             if (keyboardIndex != 0) {
                 keyboardIndex = 0;
                 switchView(keyboardIndex);
-                v.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_keyboard_keyboard_number"));
+                v.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_keyboard_number"));
                 ((Button) v).setTextColor(Color.WHITE);
             }
         } else if (v.getId() == btn_character.getId()) {
             // switch to digital
-            btn_number.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_keyboard_key_btn_normal"));
-            btn_symbol.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_keyboard_key_btn_normal"));
+            btn_number.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_key_btn_normal"));
+            btn_symbol.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_key_btn_normal"));
             btn_number.setTextColor(Color.BLACK);
             btn_symbol.setTextColor(Color.BLACK);
             if (keyboardIndex != 1) {
                 keyboardIndex = 1;
                 switchView(keyboardIndex);
-                v.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_keyboard_keyboard_character"));
+                v.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_keyboard_character"));
                 ((Button) v).setTextColor(Color.WHITE);
             }
         } else if (v.getId() == btn_symbol.getId()) {
             // switch to digital
-            btn_number.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_keyboard_key_btn_normal"));
-            btn_character.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_keyboard_key_btn_normal"));
+            btn_number.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_key_btn_normal"));
+            btn_character.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_key_btn_normal"));
             btn_number.setTextColor(Color.BLACK);
             btn_character.setTextColor(Color.BLACK);
             if (keyboardIndex != 2) {
                 keyboardIndex = 2;
                 switchView(keyboardIndex);
-                v.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_keyboard_keyboard_symbol"));
+                v.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_keyboard_symbol"));
                 ((Button) v).setTextColor(Color.WHITE);
             }
         } else if (v.getId() == btn_clear.getId()) {

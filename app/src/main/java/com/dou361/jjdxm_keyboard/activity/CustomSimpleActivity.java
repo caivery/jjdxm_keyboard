@@ -87,7 +87,7 @@ public class CustomSimpleActivity extends Activity implements FuncLayout.OnFuncK
                 ekBar.getEtChat().setText("");
             }
         });
-        ekBar.getEmoticonsToolBarView().addFixedToolItemView(true, R.drawable.customui_icon_add_nomal, null, new View.OnClickListener() {
+        ekBar.getEmoticonsToolBarView().addFixedToolItemView(true, R.drawable.jjdxm_keyboard_icon_add_nomal, null, new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(mContext, "ADD", Toast.LENGTH_SHORT).show();
@@ -121,7 +121,7 @@ public class CustomSimpleActivity extends Activity implements FuncLayout.OnFuncK
                 ekBar.getEtChat().setText("");
             }
         });
-        ekBar.getEmoticonsToolBarView().addToolItemView(R.drawable.customui_icon_add_nomal, new View.OnClickListener() {
+        ekBar.getEmoticonsToolBarView().addToolItemView(R.drawable.jjdxm_keyboard_icon_add_nomal, new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(mContext, "TEST", Toast.LENGTH_SHORT).show();

@@ -1,13 +1,13 @@
 
-# [jjdxm_customui][project] #
+# [jjdxm_keyboard][project] #
 ## Introduction ##
 这是一个常用的自定义view
 ## Features ##
 
 ## Screenshots ##
 
-<img src="https://raw.githubusercontent.com/jjdxmashl/jjdxm_customui/master/screenshots/icon01.png" width="300"> 
-<img src="https://raw.githubusercontent.com/jjdxmashl/jjdxm_customui/master/screenshots/icon02.png" width="300"> 
+<img src="https://raw.githubusercontent.com/jjdxmashl/jjdxm_keyboard/master/screenshots/icon01.png" width="300"> 
+<img src="https://raw.githubusercontent.com/jjdxmashl/jjdxm_keyboard/master/screenshots/icon02.png" width="300"> 
  
 ## Download ##
 
@@ -21,16 +21,16 @@ Download or grab via Maven:
 
 	<dependency>
 	  <groupId>keyboard</groupId>
-	  <artifactId>jjdxm-customui</artifactId>
+	  <artifactId>jjdxm-keyboard</artifactId>
 	  <version>x.x.x</version>
 	</dependency>
 
 or Gradle:
 
-	compile 'keyboard:jjdxm-customui:x.x.x'
+	compile 'keyboard:jjdxm-keyboard:x.x.x'
 
 
-jjdxm-customui requires at minimum Java 15 or Android 4.0.
+jjdxm-keyboard requires at minimum Java 15 or Android 4.0.
 
 ## Get Started ##
 
@@ -72,10 +72,10 @@ If you find any bug when using project, please report [here][issues]. Thanks for
 
 [web]:http://www.dou361.com
 [github]:https://github.com/jjdxmashl/
-[project]:https://github.com/jjdxmashl/jjdxm_customui/
-[issues]:https://github.com/jjdxmashl/jjdxm_customui/issues/new
-[downapk]:https://raw.githubusercontent.com/jjdxmashl/jjdxm_customui/master/apk/app-debug.apk
-[lastaar]:https://raw.githubusercontent.com/jjdxmashl/jjdxm_baseutils/master/release/jjdxm-customui-1.0.0.aar
-[lastjar]:https://raw.githubusercontent.com/jjdxmashl/jjdxm_baseutils/master/release/jjdxm-customui-1.0.0.jar
-[icon01]:https://raw.githubusercontent.com/jjdxmashl/jjdxm_customui/master/screenshots/icon01.png
-[icon02]:https://raw.githubusercontent.com/jjdxmashl/jjdxm_customui/master/screenshots/icon02.png
+[project]:https://github.com/jjdxmashl/jjdxm_keyboard/
+[issues]:https://github.com/jjdxmashl/jjdxm_keyboard/issues/new
+[downapk]:https://raw.githubusercontent.com/jjdxmashl/jjdxm_keyboard/master/apk/app-debug.apk
+[lastaar]:https://raw.githubusercontent.com/jjdxmashl/jjdxm_keyboard/master/release/jjdxm-keyboard-1.0.0.aar
+[lastjar]:https://raw.githubusercontent.com/jjdxmashl/jjdxm_keyboard/master/release/jjdxm-keyboard-1.0.0.jar
+[icon01]:https://raw.githubusercontent.com/jjdxmashl/jjdxm_keyboard/master/screenshots/icon01.png
+[icon02]:https://raw.githubusercontent.com/jjdxmashl/jjdxm_keyboard/master/screenshots/icon02.png

@@ -36,7 +36,6 @@ public class ImageLoader implements ImageBase {
     /**
      * @param uriStr
      * @param imageView
-     * @throws IOException
      */
     @Override
     public void displayImage(String uriStr, ImageView imageView) throws IOException {
@@ -74,7 +73,6 @@ public class ImageLoader implements ImageBase {
      *
      * @param imageUri
      * @param imageView
-     * @throws IOException
      */
     protected void displayImageFromFile(String imageUri, ImageView imageView) throws IOException {
         String filePath = Scheme.FILE.crop(imageUri);
@@ -99,7 +97,6 @@ public class ImageLoader implements ImageBase {
      *
      * @param imageUri
      * @param imageView
-     * @throws IOException
      */
     protected void displayImageFromAssets(String imageUri, ImageView imageView) throws IOException {
         String filePath = Scheme.ASSETS.crop(imageUri);
@@ -120,7 +117,6 @@ public class ImageLoader implements ImageBase {
      *
      * @param imageUri
      * @param imageView
-     * @throws IOException
      */
     protected void displayImageFromDrawable(String imageUri, ImageView imageView) {
         String drawableIdString = Scheme.DRAWABLE.crop(imageUri);
@@ -150,7 +146,6 @@ public class ImageLoader implements ImageBase {
      *
      * @param imageUri
      * @param extra
-     * @throws IOException
      */
     protected void displayImageFromNetwork(String imageUri, Object extra) throws IOException {
     }
@@ -161,7 +156,6 @@ public class ImageLoader implements ImageBase {
      *
      * @param imageUri
      * @param imageView
-     * @throws IOException
      */
     protected void displayImageFromContent(String imageUri, ImageView imageView) throws FileNotFoundException {
     }
@@ -171,7 +165,6 @@ public class ImageLoader implements ImageBase {
      *
      * @param imageUri
      * @param imageView
-     * @throws IOException
      */
     protected void displayImageFromOtherSource(String imageUri, ImageView imageView) throws IOException {
     }

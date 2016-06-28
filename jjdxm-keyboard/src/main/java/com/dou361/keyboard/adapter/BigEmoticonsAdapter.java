@@ -32,7 +32,7 @@ public class BigEmoticonsAdapter extends EmoticonsAdapter<EmoticonEntity> {
         ViewHolder viewHolder;
         if (convertView == null) {
             viewHolder = new ViewHolder();
-            convertView = mInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "customui_item_emoticon_big"), null);
+            convertView = mInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "jjdxm_keyboard_item_emoticon_big"), null);
             viewHolder.rootView = convertView;
             viewHolder.ly_root = (LinearLayout) convertView.findViewById(ResourceUtils.getResourceIdByName(mContext, "id", "ly_root"));
             viewHolder.iv_emoticon = (ImageView) convertView.findViewById(ResourceUtils.getResourceIdByName(mContext, "id", "iv_emoticon"));
@@ -63,7 +63,7 @@ public class BigEmoticonsAdapter extends EmoticonsAdapter<EmoticonEntity> {
         final boolean isDelBtn = isDelBtn(position);
         final EmoticonEntity emoticonEntity = mData.get(position);
         if (isDelBtn) {
-            viewHolder.iv_emoticon.setImageResource(ResourceUtils.getResourceIdByName(mContext, "mipmap", "customui_icon_del"));
+            viewHolder.iv_emoticon.setImageResource(ResourceUtils.getResourceIdByName(mContext, "mipmap", "jjdxm_keyboard_icon_del"));
             viewHolder.iv_emoticon.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "bg_emoticon"));
         } else {
             if (emoticonEntity != null) {

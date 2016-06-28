@@ -3,6 +3,10 @@ package com.dou361.keyboard.utils;
 import android.content.Context;
 import android.util.Xml;
 
+import com.dou361.keyboard.bean.EmoticonEntity;
+import com.dou361.keyboard.bean.EmoticonPageEntity;
+import com.dou361.keyboard.bean.EmoticonPageSetEntity;
+
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -11,10 +15,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-
-import com.dou361.keyboard.bean.EmoticonEntity;
-import com.dou361.keyboard.bean.EmoticonPageEntity;
-import com.dou361.keyboard.bean.EmoticonPageSetEntity;
 
 public class XmlUtil {
 

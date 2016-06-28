@@ -27,7 +27,7 @@ public class BigEmoticonsAndTitleAdapter extends BigEmoticonsAdapter {
         final boolean isDelBtn = isDelBtn(position);
         final EmoticonEntity emoticonEntity = mData.get(position);
         if (isDelBtn) {
-            viewHolder.iv_emoticon.setImageResource(ResourceUtils.getResourceIdByName(mContext, "mipmap", "customui_icon_del"));
+            viewHolder.iv_emoticon.setImageResource(ResourceUtils.getResourceIdByName(mContext, "mipmap", "jjdxm_keyboard_icon_del"));
             viewHolder.iv_emoticon.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "bg_emoticon"));
         } else {
             if (emoticonEntity != null) {

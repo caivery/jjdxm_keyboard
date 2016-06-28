@@ -14,8 +14,6 @@ import android.widget.RelativeLayout;
 import com.dou361.keyboard.bean.PageSetEntity;
 import com.dou361.keyboard.utils.ResourceUtils;
 import com.dou361.keyboard.utils.imageloader.ImageLoader;
-import com.nineoldandroids.view.ViewHelper;
-
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -58,7 +56,7 @@ public class EmoticonsToolBarView extends RelativeLayout {
         super(context, attrs);
         this.context = context;
         mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        mInflater.inflate(ResourceUtils.getResourceIdByName(context, "layout", "customui_view_emoticonstoolbar"), this);
+        mInflater.inflate(ResourceUtils.getResourceIdByName(context, "layout", "jjdxm_keyboard_view_emoticonstoolbar"), this);
         this.mContext = context;
         mBtnWidth = (int) context.getResources().getDimension(ResourceUtils.getResourceIdByName(context, "dimen", "bar_tool_btn_width"));
         hsv_toolbar = (HorizontalScrollView) findViewById(ResourceUtils.getResourceIdByName(context, "id", "hsv_toolbar"));
@@ -91,7 +89,7 @@ public class EmoticonsToolBarView extends RelativeLayout {
     }
 
     protected View getCommonItemToolBtn() {
-        return mInflater == null ? null : mInflater.inflate(ResourceUtils.getResourceIdByName(context, "layout", "customui_item_toolbtn"), null);
+        return mInflater == null ? null : mInflater.inflate(ResourceUtils.getResourceIdByName(context, "layout", "jjdxm_keyboard_item_toolbtn"), null);
     }
 
     protected void initItemToolBtn(View toolBtnView, int rec, final PageSetEntity pageSetEntity, OnClickListener onClickListener) {
@@ -168,7 +166,7 @@ public class EmoticonsToolBarView extends RelativeLayout {
                 mToolBtnList.get(i).setBackgroundColor(getResources().getColor(ResourceUtils.getResourceIdByName(context, "color", "toolbar_btn_select")));
                 select = i;
             } else {
-                mToolBtnList.get(i).setBackgroundResource(ResourceUtils.getResourceIdByName(context, "drawable", "customui_btn_toolbtn_bg"));
+                mToolBtnList.get(i).setBackgroundResource(ResourceUtils.getResourceIdByName(context, "drawable", "jjdxm_keyboard_btn_toolbtn_bg"));
             }
         }
         scrollToBtnPosition(select);
@@ -182,7 +180,8 @@ public class EmoticonsToolBarView extends RelativeLayout {
                 public void run() {
                     int mScrollX = hsv_toolbar.getScrollX();
 
-                    int childX = (int) ViewHelper.getX(ly_tool.getChildAt(position));
+                    int childX = (int) ly_tool.getChildAt(position).getX();
+//                    int childX = (int) ViewHelper.getX(ly_tool.getChildAt(position));
 
                     if (childX < mScrollX) {
                         hsv_toolbar.scrollTo(childX, 0);

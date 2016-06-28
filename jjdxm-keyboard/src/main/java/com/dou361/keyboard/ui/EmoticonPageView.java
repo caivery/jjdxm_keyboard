@@ -14,22 +14,22 @@ import com.dou361.keyboard.utils.ResourceUtils;
 
 /**
  * ========================================
- * <p/>
+ * <p>
  * 版 权：dou361.com 版权所有 （C） 2015
- * <p/>
+ * <p>
  * 作 者：陈冠明
- * <p/>
+ * <p>
  * 个人网站：http://www.dou361.com
- * <p/>
+ * <p>
  * 版 本：1.0
- * <p/>
+ * <p>
  * 创建日期：2016/5/3 9:33
- * <p/>
+ * <p>
  * 描 述：表情包面板
- * <p/>
- * <p/>
+ * <p>
+ * <p>
  * 修订历史：
- * <p/>
+ * <p>
  * ========================================
  */
 public class EmoticonPageView extends RelativeLayout {
@@ -47,7 +47,7 @@ public class EmoticonPageView extends RelativeLayout {
     public EmoticonPageView(Context context, AttributeSet attrs) {
         super(context, attrs);
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(ResourceUtils.getResourceIdByName(context, "layout", "customui_item_emoticonpage"), this);
+        View view = inflater.inflate(ResourceUtils.getResourceIdByName(context, "layout", "jjdxm_keyboard_item_emoticonpage"), this);
         mGvEmotion = (GridView) view.findViewById(ResourceUtils.getResourceIdByName(context, "id", "gv_emotion"));
 
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.HONEYCOMB) {

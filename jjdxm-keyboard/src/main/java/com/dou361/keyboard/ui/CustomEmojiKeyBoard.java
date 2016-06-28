@@ -82,11 +82,11 @@ public class CustomEmojiKeyBoard extends AutoHeightLayout implements View.OnClic
 
 
     protected void inflateKeyboardBar() {
-        mInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "customui_view_keyboard_custom"), this);
+        mInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "jjdxm_keyboard_view_keyboard_custom"), this);
     }
 
     protected View inflateFunc() {
-        return mInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "customui_view_func_emoticon"), null);
+        return mInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "jjdxm_keyboard_view_func_emoticon"), null);
     }
 
     protected void initView() {
@@ -147,7 +147,7 @@ public class CustomEmojiKeyBoard extends AutoHeightLayout implements View.OnClic
                 if (!TextUtils.isEmpty(s)) {
                     mBtnSend.setVisibility(VISIBLE);
                     mBtnMultimedia.setVisibility(GONE);
-                    mBtnSend.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_btn_send_bg"));
+                    mBtnSend.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_btn_send_bg"));
                 } else {
                     mBtnMultimedia.setVisibility(VISIBLE);
                     mBtnSend.setVisibility(GONE);
@@ -180,7 +180,7 @@ public class CustomEmojiKeyBoard extends AutoHeightLayout implements View.OnClic
     public void reset() {
         EmoticonsKeyboardUtils.closeSoftKeyboard(this);
         mLyKvml.hideAllFuncView();
-        mBtnFace.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_icon_face_nomal"));
+        mBtnFace.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_icon_face_nomal"));
     }
 
     protected void showVoice() {
@@ -191,9 +191,9 @@ public class CustomEmojiKeyBoard extends AutoHeightLayout implements View.OnClic
 
     protected void checkVoice() {
         if (mBtnVoice.isShown()) {
-            mBtnVoiceOrText.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_btn_voice_or_text_keyboard"));
+            mBtnVoiceOrText.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_btn_voice_or_text_keyboard"));
         } else {
-            mBtnVoiceOrText.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_btn_voice_or_text"));
+            mBtnVoiceOrText.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_btn_voice_or_text"));
         }
     }
 
@@ -210,9 +210,9 @@ public class CustomEmojiKeyBoard extends AutoHeightLayout implements View.OnClic
     @Override
     public void onFuncChange(int key) {
         if (FUNC_TYPE_EMOTION == key) {
-            mBtnFace.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_icon_face_pop"));
+            mBtnFace.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_icon_face_pop"));
         } else {
-            mBtnFace.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_icon_face_nomal"));
+            mBtnFace.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_icon_face_nomal"));
         }
         checkVoice();
     }
@@ -269,11 +269,11 @@ public class CustomEmojiKeyBoard extends AutoHeightLayout implements View.OnClic
         int i = v.getId();
         if (i == ResourceUtils.getResourceIdByName(mContext, "id", "btn_voice_or_text")) {
             if (mRlInput.isShown()) {
-                mBtnVoiceOrText.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_btn_voice_or_text_keyboard"));
+                mBtnVoiceOrText.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_btn_voice_or_text_keyboard"));
                 showVoice();
             } else {
                 showText();
-                mBtnVoiceOrText.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_btn_voice_or_text"));
+                mBtnVoiceOrText.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_btn_voice_or_text"));
                 EmoticonsKeyboardUtils.openSoftKeyboard(mEtChat);
             }
         } else if (i == ResourceUtils.getResourceIdByName(mContext, "id", "btn_face")) {

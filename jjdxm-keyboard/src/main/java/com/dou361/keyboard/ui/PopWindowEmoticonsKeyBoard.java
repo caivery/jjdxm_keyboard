@@ -17,22 +17,22 @@ import java.util.ArrayList;
 
 /**
  * ========================================
- * <p/>
+ * <p>
  * 版 权：dou361.com 版权所有 （C） 2015
- * <p/>
+ * <p>
  * 作 者：陈冠明
- * <p/>
+ * <p>
  * 个人网站：http://www.dou361.com
- * <p/>
+ * <p>
  * 版 本：1.0
- * <p/>
+ * <p>
  * 创建日期：2016/5/3 9:54
- * <p/>
+ * <p>
  * 描 述：最简单的面板
- * <p/>
- * <p/>
+ * <p>
+ * <p>
  * 修订历史：
- * <p/>
+ * <p>
  * ========================================
  */
 public class PopWindowEmoticonsKeyBoard extends PopupWindow implements EmoticonsFuncView.OnEmoticonsPageViewListener, EmoticonsToolBarView.OnToolBarItemClickListener {
@@ -46,7 +46,7 @@ public class PopWindowEmoticonsKeyBoard extends PopupWindow implements Emoticons
         super(context, null);
         this.mContext = context;
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View mConentView = inflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "customui_view_func_emoticon"), null);
+        View mConentView = inflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "jjdxm_keyboard_view_func_emoticon"), null);
 
         setContentView(mConentView);
         setWidth(EmoticonsKeyboardUtils.getDisplayWidthPixels(mContext));

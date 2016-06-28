@@ -14,22 +14,22 @@ import com.dou361.keyboard.utils.ResourceUtils;
 
 /**
  * ========================================
- * <p/>
+ * <p>
  * 版 权：dou361.com 版权所有 （C） 2015
- * <p/>
+ * <p>
  * 作 者：陈冠明
- * <p/>
+ * <p>
  * 个人网站：http://www.dou361.com
- * <p/>
+ * <p>
  * 版 本：1.0
- * <p/>
+ * <p>
  * 创建日期：2016/4/29 17:41
- * <p/>
+ * <p>
  * 描 述：颜文字适配器
- * <p/>
- * <p/>
+ * <p>
+ * <p>
  * 修订历史：
- * <p/>
+ * <p>
  * ========================================
  */
 public class TextEmoticonsAdapter extends EmoticonsAdapter<EmoticonEntity> {
@@ -43,7 +43,7 @@ public class TextEmoticonsAdapter extends EmoticonsAdapter<EmoticonEntity> {
         ViewHolder viewHolder;
         if (convertView == null) {
             viewHolder = new ViewHolder();
-            convertView = mInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "customui_item_emoticon_text"), null);
+            convertView = mInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "jjdxm_keyboard_item_emoticon_text"), null);
             viewHolder.rootView = convertView;
             viewHolder.ly_root = (LinearLayout) convertView.findViewById(ResourceUtils.getResourceIdByName(mContext, "id", "ly_root"));
             viewHolder.tv_content = (TextView) convertView.findViewById(ResourceUtils.getResourceIdByName(mContext, "id", "tv_content"));

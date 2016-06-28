@@ -15,22 +15,22 @@ import com.dou361.keyboard.utils.ResourceUtils;
 
 /**
  * ========================================
- * <p/>
+ * <p>
  * 版 权：dou361.com 版权所有 （C） 2015
- * <p/>
+ * <p>
  * 作 者：陈冠明
- * <p/>
+ * <p>
  * 个人网站：http://www.dou361.com
- * <p/>
+ * <p>
  * 版 本：1.0
- * <p/>
+ * <p>
  * 创建日期：2016/6/22 11:46
- * <p/>
+ * <p>
  * 描 述：自定义表情键盘
- * <p/>
- * <p/>
+ * <p>
+ * <p>
  * 修订历史：
- * <p/>
+ * <p>
  * ========================================
  */
 public class CustomQQEmojiKeyBoard extends CustomEmojiKeyBoard {
@@ -50,12 +50,12 @@ public class CustomQQEmojiKeyBoard extends CustomEmojiKeyBoard {
 
     @Override
     protected void inflateKeyboardBar() {
-        mInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "customui_view_keyboard_qq"), this);
+        mInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "jjdxm_keyboard_view_keyboard_qq"), this);
     }
 
     @Override
     protected View inflateFunc() {
-        return mInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "customui_view_func_emoticon"), null);
+        return mInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "jjdxm_keyboard_view_func_emoticon"), null);
     }
 
     @Override
@@ -105,9 +105,9 @@ public class CustomQQEmojiKeyBoard extends CustomEmojiKeyBoard {
             @Override
             public void afterTextChanged(Editable s) {
                 if (!TextUtils.isEmpty(s)) {
-                    mBtnSend.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_btn_send_bg"));
+                    mBtnSend.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_btn_send_bg"));
                 } else {
-                    mBtnSend.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_btn_send_bg_disable"));
+                    mBtnSend.setBackgroundResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_btn_send_bg_disable"));
                 }
             }
         });
@@ -135,13 +135,13 @@ public class CustomQQEmojiKeyBoard extends CustomEmojiKeyBoard {
     }
 
     public void resetIcon() {
-        mBtnVoice.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_qq_skin_aio_panel_ptt"));
-        mBtnPtv.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_qq_skin_aio_panel_ptv"));
-        mBtnImage.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_qq_skin_aio_panel_image"));
-        mBtnCamera.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_qq_skin_aio_panel_camera"));
-        mBtnHongbao.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_qq_skin_aio_panel_hongbao"));
-        mBtnEmoticon.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_qq_skin_aio_panel_emotion"));
-        mBtnPlug.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "customui_qq_skin_aio_panel_plus"));
+        mBtnVoice.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_qq_skin_aio_panel_ptt"));
+        mBtnPtv.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_qq_skin_aio_panel_ptv"));
+        mBtnImage.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_qq_skin_aio_panel_image"));
+        mBtnCamera.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_qq_skin_aio_panel_camera"));
+        mBtnHongbao.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_qq_skin_aio_panel_hongbao"));
+        mBtnEmoticon.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_qq_skin_aio_panel_emotion"));
+        mBtnPlug.setImageResource(ResourceUtils.getResourceIdByName(mContext, "drawable", "jjdxm_keyboard_qq_skin_aio_panel_plus"));
     }
 
     @Override
